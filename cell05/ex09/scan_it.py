@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 
-import sys, re
+import sys
 
-if len(sys.argv) - 1 == 2:
-    print(len(re.findall(sys.argv[1], sys.argv[2])))
+if len(sys.argv) - 1 == 2 and sys.argv[2].count(sys.argv[1]):
+    print(sys.argv[2].count(sys.argv[1]))
 else:
     print("none")
