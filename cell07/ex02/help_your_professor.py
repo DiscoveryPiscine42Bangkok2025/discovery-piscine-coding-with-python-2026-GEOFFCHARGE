@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 
 def average(student):
-    avg = 0
+    score = 0
     for i in student.values():
-        avg += i
-    return avg / len(student)
+        score += i
+    return score / len(student)
 
 class_3B = {
     "marine": 18,
