@@ -1,7 +1,10 @@
 #!/usr/bin/env python
 
+def sort_date_of_birth(item):
+    return item[1]["date_of_birth"]
+
 def famous_births(women):
-    for _, j in sorted(women.items()):
+    for _, j in sorted(women.items(), key=sort_date_of_birth):
         print(f"{j["name"]} is a great scientist born in {j["date_of_birth"]}.")
 
 women_scientists = {
