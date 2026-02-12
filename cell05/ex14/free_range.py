@@ -3,6 +3,11 @@
 import sys
 
 if len(sys.argv) - 1 == 2:
-    print([i for i in range(int(sys.argv[1]), int(sys.argv[2]) + 1)])
+    first = int(sys.argv[1])
+    second = int(sys.argv[2])
+    if first < second:
+        print([i for i in range(first, second + 1)])
+    else:
+        print([i for i in range(first, second - 1, -1)])
 else:
     print("none")
