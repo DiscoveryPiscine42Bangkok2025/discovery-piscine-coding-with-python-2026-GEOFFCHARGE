@@ -1,20 +1,14 @@
-"""sss"""
-import sys
-from checkmate import checkboard,checkmate
+from checkmate import checkboard, checkmate
 
 def main():
-    # test 5*5
     board = """\
-        .....
-        ..K..
-        .P...
-        ...B.
-        .....
-    """
+            P...
+            .K..
+            ....
+            ....\
+            """
     if checkboard(board):
         checkmate(board)
 
-
 if __name__ == "__main__":
     main()
-# exe
